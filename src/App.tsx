@@ -16,7 +16,7 @@ function App() {
     {
       id: 2,
       text: 'Visite nosso Site',
-      link: 'https://api.whatsapp.com/send?phone=5531984056082&text=Ol%C3%A1%21%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20uma%20solu%C3%A7%C3%A3o%20digital%20para%20o%20meu%20neg%C3%B3cio.%20Podemos%20falar%3F',
+      link: 'https://lintratech.cloud',
       icon: 'globe',
       primary: false
     }
