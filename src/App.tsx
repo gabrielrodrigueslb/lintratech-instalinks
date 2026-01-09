@@ -1,5 +1,7 @@
 import { IoChatbubbleOutline } from "react-icons/io5";
 import { CiLink } from "react-icons/ci";
+import { FaRegNewspaper } from "react-icons/fa";
+import { BsGlobeAmericas } from "react-icons/bs";
 import './App.css';
 
 function App() {
@@ -17,7 +19,14 @@ function App() {
       id: 2,
       text: 'Visite nosso Site',
       link: 'https://lintratech.cloud',
-      icon: 'globe',
+      icon: <BsGlobeAmericas/>,
+      primary: false
+    },
+    {
+      id: 2,
+      text: 'Acesse nosso Blog',
+      link: 'https://lintratech.cloud/blog',
+      icon: <FaRegNewspaper/>,
       primary: false
     }
   ];
@@ -82,9 +91,9 @@ function App() {
               <div className="text-2xl text-white">
                 {button.icon === 'whatsapp' ? (
                  <IoChatbubbleOutline />
-                ) : (
+                ) : button.icon == '' ? (
                   <CiLink />
-                )}
+                ) : (button.icon)}
               </div>
 
               <div className="flex flex-col items-start flex-1">
